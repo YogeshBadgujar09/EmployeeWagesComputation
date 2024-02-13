@@ -1,7 +1,7 @@
 package com.infogalaxy.emloyeewagecomputation;
 
-import java.util.Scanner;
-
+import java.util.Random;
+ 
 public class Welcome {
 	
 	public static void main(String args[])
@@ -10,10 +10,10 @@ public class Welcome {
 		
 		int attendance = 0;
 		
-		System.out.print("Enter a Employee Attendance [0 - Absent / 1 - Present] :");
-		Scanner obj = new Scanner(System.in);
-		attendance = obj.nextInt();
+		Random random = new Random();
+	    attendance = random.nextInt(9)%2;
 		
+		System.out.println(attendance);
 		if(attendance == 0)
 		{
 			System.out.println("Employee is Absend");
