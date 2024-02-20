@@ -55,12 +55,11 @@ public class EmployeeWageComp {
 			}
 				
 			totalWage+=dailyWage;
-			System.out.println("Total Monthly Wage :" + totalWage);
+
 			System.out.println("------------------------------");
 		}
 		
-
-		 
+		System.out.println("Total Monthly Wage :" + totalWage); 
 		 
 	}
 
